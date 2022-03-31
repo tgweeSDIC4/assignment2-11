@@ -6,5 +6,15 @@ let config={
     baseURL:"http://localhost"
 }
 
+switch(env.toUpperCase()){
+    case "PRODUCT":
+        config.baseURL="https://skillsunion.com"
+        break;
+    case "STAGE":{
+        config.baseURL="https://stage.skillsunion.com"
+        break;
+    }
+}
+
 
 export default config
