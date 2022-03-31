@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./GetNumbers.css";
 
+
 function GetNumbers(props) {
   const [numberOne, setNumberOne] = useState(0);
   const [numberTwo, setNumberTwo] = useState(0);
